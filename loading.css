@@ -1,0 +1,42 @@
+/* Reset basic margins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full-screen Loading Overlay */
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff; /* White background to match your video */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Keeps it on top of everything */
+  transition: opacity 0.6s ease, visibility 0.6s ease; /* Smooth fade-out */
+}
+
+/* Responsive Video Sizing */
+#loading-video {
+  max-width: 800px;
+  width: 90%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Hide class applied by JavaScript */
+#loading-screen.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Base style for main site content */
+#main-content {
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
