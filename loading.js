@@ -5,5 +5,5 @@ window.addEventListener('load', () => {
   // Optional: Set a minimum display time (e.g., 2 seconds) so the user sees the animation
   setTimeout(() => {
     loadingScreen.classList.add('hidden');
-  }, 10000); 
+  }, 12000); 
 });
